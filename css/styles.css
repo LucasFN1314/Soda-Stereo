@@ -1,0 +1,147 @@
+:root{
+    --bg-color:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.bg-music{
+    display: none;
+}
+
+header{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>.header_background{
+    background-image: url(/img/Background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    -webkit-filter: brightness(75%) blur(0);
+
+    width: 100%;
+    height: 500px;
+}
+
+header>.header_title{
+    color: white;
+    position: absolute;
+
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header_title>h1{
+    font-size: 60px;
+    text-shadow: 3px 3px black;
+}
+
+.header_title>h2{
+    font-size: 40px;
+    text-shadow: 3px 3px black;
+}
+
+header>.wave{
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+
+    fill: var(--bg-color);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.album{
+    background: rgb(0, 0, 0);
+
+    display: flex;
+    width: 90%;
+
+    margin: auto;
+    padding: 5px;
+    margin-top: 50px;
+    border: 1px solid white;
+}
+
+.album>.imagen{
+    display: flex;
+    justify-content: center;
+
+    margin:50px;
+
+    flex-direction: column;
+}
+
+.album>.imagen>img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.album>.contenedor{
+    width: 100%;
+}
+
+.album>.contenedor>.title{
+    display: flex;
+    justify-content: center;
+}
+
+.album>.contenedor>.title>h2{
+    padding: 10px;
+    color: white;
+}
+
+.album>.contenedor>.description{ 
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.album>.contenedor>.description>p{
+    width: 90%;
+    color: white;
+}
+
+.links{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.links>a{
+    margin: auto;
+    margin-top: 30px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.links>a:hover{
+    text-decoration: underline;
+}
